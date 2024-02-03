@@ -4,10 +4,10 @@
   "description": "A client for the kagi api.",
   "type": "module",
   "exports": {
-    ".": "./dist/index.js"
+    ".": "./dist/src/index.js"
   },
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "module": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "npm run build && DOTENV_CONFIG_PATH=.env jest --setupFiles=dotenv/config"
@@ -18,7 +18,7 @@
   "homepage": "https://github.com/NilsKrause/kagi-api-client",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NilsKrause/kagi-api-client.git"
+    "url": "git+https://github.com/NilsKrause/kagi-api-client.git"
   },
   "engines": {
     "node": ">=14.17"
